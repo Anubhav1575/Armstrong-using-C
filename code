@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int a,c,f=0,i,d;
+    printf("Enter a number :");
+    scanf("%d",&a);
+    d=a;
+    while(d!=0)
+    {
+        c=d%10;
+        i=c*c*c;
+        f=f+i;
+        d=d/10;
+    }
+    if(a==f)
+    printf("armstrom ");
+    else
+    printf("not an armstrom");
+    return 0;
+}
